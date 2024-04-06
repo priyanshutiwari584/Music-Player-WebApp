@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="header-navbar">
+            <div class="header-info">
+                <button class="toggle" id="toggleBtn">
+                    <img src="Icons/menu.svg" alt="Menu">
+                </button>
+
+                <div class="logo">
+                    <img src="Icons/Logo.svg" alt="">
+                    <div class="logo-text">
+                        <span>Music</span> <span>Player</span>
+                    </div>
+                </div>
+            </div>
+            <div class="searchbox-container">
+                <div class="searchbox">
+                    <img src="Icons/Search.svg" alt="search-icon" class="search-icon">
+                    <input class="search-input" type="search" placeholder="Search songs,albums">
+                    <div class="suggestions-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="left-side">
+                <div class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-list-item"><a href="#" class="list-item-link"><img src="/Icons/Home.svg"
+                                    alt="">Home</a></li>
+                        <li class="navbar-list-item"><a href="#" class="list-item-link"><img src="/Icons/Track-list.svg"
+                                    alt="">Tracks</a></li>
+                        <li class="navbar-list-item"><a href="#" class="list-item-link"><img src="/Icons/Album.svg"
+                                    alt="">Albums</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <div id="song_container">
+                    <ul class="songList">
+                    </ul>
+                </div>
+                <div class="audio-player">
+                    <div class="audio-info">
+                        <div class="audio-info-nav">
+                            <img src="Icons/arrow down.svg" alt="down arrow" class="scale-down">
+                            <img src="Icons/playlist.svg" alt="show playlist" class="show-playlist">
+                        </div>
+                        <div class="audio-info-content">
+                            <div class="audio-img">
+                                <img src="" alt="Song-Image" class="song-image">
+                            </div>
+                            <div class="upNext-songs">
+                                <ul class="upNextSongList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-player-controls">
+                    <div class="song-seekbar">
+                        <div class="seekbar-pointer">
+                        </div>
+                    </div>
+                    <div class="song-player-controls">
+                        <div class="song-info">
+                            <img src="" alt="song-img" class="song-img">
+                            <div class="music-info">
+                                <div class="song-title">No Music selected</div>
+                                <div class="song-artist"></div>
+                            </div>
+                        </div>
+                        <div class="song-controls">
+                            <button class="control-btn" id="shuffle" data="shuffleNot"><img src="Icons/shuffle.svg"
+                                    alt="Previous"></button>
+                            <button class="control-btn" id="prev"><img src="Icons/previous.svg" alt="Previous"></button>
+                            <button class="control-btn" id="playPause"><img src="Icons/play.svg" alt="Play"></button>
+                            <button class="control-btn" id="next"><img src="Icons/next.svg" alt="Next"></button>
+                            <button class="control-btn" id="repeat" data="repeat"><img src="Icons/repeat.svg"
+                                    alt="repeat"></button>
+                        </div>
+                        <div class="song-timer">
+                            <span class="current-time">00:00</span>
+                            <span class="divider">/</span>
+                            <span class="max-duration">00:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
